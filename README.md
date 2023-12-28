@@ -1,2 +1,16 @@
-# amcc-web-backend-2023
-Repository materi pembelajaran member Divisi Web Programming Back End AMCC 2023/2024
+# Pertemuan 1
+
+Pada pertemuan kali ini teman teman akan belajar tentang :
+
+- Pengenalan HTML
+- PHP Dasar
+- Tipe Data PHP
+- Variabel dan NULL
+- Operator Pada PHP
+- Array
+- Array Asosiatif
+- Array Multidimensional (array didalam array)
+
+Untuk lebih lengkap dan detailnya teman teman bisa baca di artikel [Medium](https://medium.com/amcc-amikom/langkah-awal-menjadi-backend-developer-dasar-dasar-php-19231ac6b7e0) ini
+
+Sampai jumpa di pertemuan ke dua 👋👋
