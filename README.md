@@ -1,2 +1,3 @@
-# amcc-web-backend-2023
-Repository materi pembelajaran member Divisi Web Programming Back End AMCC 2023/2024
+# Selamat Datang di Repository Web Backend 👋
+
+Repository ini berisi materi pembelajaran member Divisi Web Programming Back End AMCC
