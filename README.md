@@ -1,11 +1,99 @@
-# Selamat Datang di Repository Web Backend 👋
+## Task 1: Buat database dan table
 
-Repository ini berisi materi pembelajaran member Divisi Web Programming Back End AMCC
+### Buat database
 
-# Cara Download
+Buat database baru dengan nama `todolist`
 
-Untuk teman teman yang tidak berangkat pada pertemuan tertentu karena suatu alasan dan merasa tertinggal dengan yang lainnya. Tenang saja kami sudah menyiapkan hasil hasil praktikum pada tiap tiap pertemuan, jadi teman teman tinggal download saja. Cara mendownload ikuti langkah langkah berikut ini :
+### Buat table
 
-1. Klik tombol yang ada di pojok kiri atas lalu pilih pertemuan berapa yang teman teman ingin download misal ingin mendownload hasil praktikum pada pertemuan pertama maka pilih `pertemuan1` dan seterusnya ![Pilih Pertemuan](img/step-1.png)
+Buat tabel baru didalam database yang barusan dibuat, beri nama `users` dan `lists`. Pastikan tabel yang dibuat seperti schema berikut ini
 
-2. Setelah memilih pertemuan selanjutnya klik tombol warna biru bertuliskan `Code` di pojok kanan atas lalu klik `Download ZIP` ![Tombol Download](img/step-2.png)
+<img src="./img/schema.png" style="width: 100%" />
+
+##### Note
+
+- Pastikan kolom `id` memiliki `AUTO_INCREMENT` dan `PRIMARY KEY`
+- Kolom yang tipe datanya `varchar`, buat panjangnya jadi 255
+- Pastikan kolom `user_id` dapat bernilai `null` (nullable)
+- Pastikan kolom `status` mempunyai nilai default yaitu `0`
+
+### Insert data
+
+Copy sql berikut lalu paste kedalam tabel `lists`
+
+```sql
+INSERT INTO `lists` (`id`, `user_id`, `todo`, `status`)
+VALUES (NULL, NULL, 'Belajar ngoding PHP', '0'),
+       (NULL, NULL, 'Pelatihan AMCC', '0'),
+       (NULL, NULL, 'Bikin konten', '0');
+```
+
+#### Referensi untuk mengerjakan Task 1
+
+- https://www.w3schools.com/mysql/mysql_autoincrement.asp
+- https://www.w3schools.com/mysql/mysql_primarykey.asp
+- https://www.w3schools.com/mysql/mysql_create_table.asp
+- https://www.w3schools.com/mysql/mysql_default.asp
+- https://www.w3schools.com/mysql/mysql_foreignkey.asp
+
+## Task 2: Buat koneksi databasse
+
+Lengkapi konfigurasi database pada file `config.php`
+![Task 2](./img/task-2.png)
+
+#### Referensi untuk mengerjakan Task 2
+
+- https://www.w3schools.com/php/php_mysql_connect.asp
+
+## Task 3: Ambil semua list
+
+Buat query untuk mendapatkan semua data `lists` pada file `index.php`
+![task-3](./img/task-3.png)
+
+#### Referensi untuk mengerjakan Task 3
+
+- https://www.w3schools.com/php/php_mysql_select.asp
+- https://www.w3schools.com/php/func_mysqli_fetch_all.asp
+
+## Task 4: Menampilkan list
+
+Masih pada file `index.php`, scroll kebawah sampai bagian tabel lalu lengkapi kode yang kurang dibawah komentar
+![task-4](./img/task-4.png)
+
+#### Referensi untuk mengerjakan Task 4
+
+- https://www.geeksforgeeks.org/how-to-echo-html-in-php/
+- https://www.delftstack.com/howto/php/php-echo-shorthand/
+- https://www.w3schools.com/php/keyword_endforeach.asp
+
+## Task 5: Menambah todo
+
+Buat query pada file `create.php` untuk menambahkan todo baru
+
+![task-5](./img/task-5.png)
+
+#### Referensi untuk mengerjakan Task 5
+
+- https://www.w3schools.com/php/php_mysql_insert.asp
+- https://www.w3schools.com/php/php_mysql_prepared_statements.asp
+
+## Task 6: Menghapus todo
+
+Untuk menghapus todo diperlukan query, jadi buatlah query untuk menghapus todo berdasarkan ID pada file `delete.php`
+![task-6](./img/task-6.png)
+
+#### Referensi untuk mengerjakan Task 6
+
+- https://www.w3schools.com/php/php_mysql_delete.asp
+- https://www.w3schools.com/php/php_mysql_prepared_statements.asp
+
+## Task 7: Update status todo
+
+Kalau kita lihat sepertinya aplikasi kita sudah jadi, begitu kita centang maka todo-nya akan tercoret menandakan telah selesai. Namun sebenarnya itu hanyalah tampilannya saja kita harus juga meng-update status di databasenya, maka dari itu buatlah query untuk update status di database berdasarkan ID pada file `checked.php`
+
+![task-7](./img/task-7.png)
+
+#### Referensi untuk mengerjakan Task 7
+
+- https://www.w3schools.com/php/php_mysql_update.asp
+- https://www.w3schools.com/php/php_mysql_prepared_statements.asp
