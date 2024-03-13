@@ -1,4 +1,4 @@
-<h1 style="text-align: center">Todolist App</h1>
+<h1 style="text-align: center;">Todolist App</h1>
 
 ![final-result](./img/result.gif)
 
