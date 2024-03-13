@@ -1,3 +1,7 @@
+<h1 style="text-align: center">Todolist App</h1>
+
+![final-result](./img/result.gif)
+
 ## Task 1: Buat database dan table
 
 ### Buat database
