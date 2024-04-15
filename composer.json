@@ -1,0 +1,17 @@
+{
+    "name": "amcc/mvc-framework",
+    "description": "PHP MVC framework buatan AMCC",
+    "type": "library",
+    "authors": [
+        {
+            "name": "AMCC",
+            "email": "amccamikom@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AMCC\\MVC\\": "src"
+        }
+    }
+}
